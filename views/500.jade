@@ -1,0 +1,56 @@
+// extends layout
+// block content
+// h1= title
+// p #{title}
+// p #{error}
+
+doctype //if IE 8
+html.ie8.no-js(lang='en')  
+//if IE 9
+html.ie9.no-js(lang='en')  
+// [if !IE] <!
+html(lang='en')
+  // <![endif]
+  // BEGIN HEAD
+  head
+    meta(charset='utf-8')
+    |     
+    title Affilired | error 500
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(content='width=device-width, initial-scale=1.0', name='viewport')
+    |     
+    meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+    |     
+    meta(content='', name='description')
+    |     
+    meta(content='', name='author')
+    // BEGIN PAGE LEVEL STYLES
+    link(href='/stylesheets/error.css', rel='stylesheet', type='text/css')
+    // END PAGE LEVEL STYLES
+    link(rel='shortcut icon', href='i/favicon.png')
+  // END HEAD
+  // BEGIN BODY
+  body.page-500-full-page
+    .row
+      .col-md-offset-3.col-md-6
+        a(href='/')
+          img(src='/images/logo_affilired1.png', alt='www.affilired.com', title='www.affilired.com')
+    .row
+      .col-md-12.page-500
+        .number
+          | 500
+        |         
+        .details
+          h3 Internal Server Error.
+          |             
+          p
+            | We are fixing it!
+            br
+            |                 Please come back in a while.
+            br
+            br
+    .backstretch(style='left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; z-index: -999999; position: fixed; width: 100%; height: 100%')
+      img(src='/images/af_login01.jpg', style='position: absolute; margin: 0px; padding: 0px; border: medium none; max-height: none; max-width: none; z-index: -999999; width: 1920px; height: 1440.51px; left: 0px; top: -400.255px;')
+  // END BODY

@@ -1,0 +1,15 @@
+Steps : How to start mongodb server :
+
+1.) sudo mongod
+2.) Open new terminal.
+3.) mongo
+
+--------------------------------------------------------------------------------
+check process of mongodb :
+
+ps ax | grep mongod
+
+--------------------------------------------------------------------------------
+Kill the process :
+
+kill -9 [process id]
